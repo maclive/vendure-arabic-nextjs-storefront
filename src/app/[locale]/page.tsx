@@ -1,3 +1,10 @@
+import { routing } from '@/i18n/routing';   // أو المسار الصحيح بتاع routing
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({
+    locale,
+  }));
+}
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { HeroSection } from '@/components/layout/hero-section';
