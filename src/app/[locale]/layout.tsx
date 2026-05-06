@@ -1,9 +1,7 @@
-import { routing } from '@/i18n/routing';   // أو المسار الصحيح بتاع routing
+import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({
-    locale,
-  }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
