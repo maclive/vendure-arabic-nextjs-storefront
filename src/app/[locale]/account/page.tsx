@@ -10,7 +10,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getActiveCustomer } from '@/lib/vendure/actions';
 import { AccountNavLinks } from '@/components/account/account-nav-links';
-
+export const dynamic = 'force-dynamic';
 const accountNavItems = [
   { href: '/account', labelKey: 'profile', icon: 'user' },
   { href: '/account/orders', labelKey: 'orders', icon: 'package' },
